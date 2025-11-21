@@ -1,11 +1,4 @@
-/*
- * main.c
- *
- * TCP Client - Template for Computer Networks assignment
- *
- * This file contains the boilerplate code for a TCP client
- * portable across Windows, Linux and macOS.
- */
+
 
 #if defined WIN32
 #include <winsock.h>
@@ -34,10 +27,10 @@ void clearwinsock() {
 
 int main(int argc, char *argv[]) {
 
-	// TODO: Implement client logic
+
 
 #if defined WIN32
-	// Initialize Winsock
+
 	WSADATA wsa_data;
 	int result = WSAStartup(MAKEWORD(2,2), &wsa_data);
 	if (result != NO_ERROR) {
@@ -48,25 +41,10 @@ int main(int argc, char *argv[]) {
 
 	int my_socket;
 
-	// TODO: Create socket
-	// my_socket = socket(...);
 
-	// TODO: Configure server address
-	// struct sockaddr_in server_addr;
-	// ...
-
-	// TODO: Connect to server
-	// connect(...);
-
-	// TODO: Implement communication logic
-	// send(...);
-	// recv(...);
-
-	// TODO: Close socket
-	// closesocket(my_socket);
 
 	printf("Client terminated.\n");
 
 	clearwinsock();
 	return 0;
-} // main end
+}
